@@ -2069,6 +2069,9 @@ img {
   font-size: 16px;
   line-height: 32px;
 }
+.emotions__input:hover {
+  border: 1px solid red;
+}
 .send__wrapper {
   width: 78%;
   display: flex;
