@@ -2063,9 +2063,8 @@ img {
   text-transform: uppercase;
 }
 .emotions__input {
-  width: 92%;
+  width: 95%;
   height: 130px;
-  padding: 2%;
   margin: 20px 2%;
   font-size: 16px;
   line-height: 32px;
