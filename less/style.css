@@ -735,7 +735,6 @@ img {
   .reviews__item {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin: 0;
     padding: 0;
   }
@@ -756,7 +755,7 @@ img {
 @media (max-width: 660px) {
   .reviews__text {
     font-size: 14px;
-    margin-top: 0;
+    margin-top: 30px;
   }
 }
 .reviews__author {
@@ -776,8 +775,6 @@ img {
   .reviews__author {
     font-size: 18px;
     order: -1;
-    margin-top: 40px;
-    margin-bottom: 20px;
   }
 }
 .reviews__author-info {
@@ -797,6 +794,30 @@ img {
 @media (max-width: 660px) {
   .reviews__author-info {
     display: none;
+  }
+}
+.gallery {
+  overflow: hidden;
+}
+.gallery ul {
+  width: 9999px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: margin-left 250ms;
+}
+.gallery li {
+  display: inline-block;
+  width: 6.9%;
+}
+@media (max-width: 1200px) {
+  .gallery li {
+    width: calc(56.81818182vw);
+  }
+}
+@media (max-width: 660px) {
+  .gallery li {
+    width: calc(76.33587786vw);
   }
 }
 .reviews__prev {
@@ -876,6 +897,7 @@ img {
 /*Файл block/slider-*/
 .price__toggles {
   display: none;
+  text-align: center;
 }
 @media (max-width: 1200px) {
   .price__toggles {
@@ -1500,7 +1522,7 @@ img {
 }
 .post-edit__filters-list {
   list-style: none;
-  margin: 0 ;
+  margin: 0;
   padding: 0;
 }
 .post-edit__filters-item {
@@ -1607,7 +1629,7 @@ img {
 }
 .post-edit__publish:hover {
   background-color: #ffffff;
-  color: #d22856 ;
+  color: #d22856;
 }
 @media (max-width: 1200px) {
   .post-edit__publish {
@@ -2104,7 +2126,7 @@ img {
   background-color: #269761;
 }
 .send-form:active {
-  color: #faf4f4be ;
+  color: #faf4f4be;
   background-color: #269761;
 }
 .send-note {
