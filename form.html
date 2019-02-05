@@ -1,219 +1,209 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Отправка формы в "Pink"</title>
-        <link href="../pink/css/normalize.css" rel="stylesheet">
-        <link href="../pink/less/style.css" rel="stylesheet">
+  <head>
+    <meta charset="utf-8">
+    <title>Отправка формы в "Pink"</title>
+    <link href="../pink/css/normalize.css" rel="stylesheet">
+    <link href="../pink/less/style.css" rel="stylesheet">
         
-        
-    </head>
-    <body>
+  </head>
+  <body>
     <header class="page-header">
         
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-                <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-            <div class="main-nav__wrapper">
-                <a href="#" class="main-nav__logo">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <a href="#" class="main-nav__logo">
+            <img src="../pink/img/header-logo-mobile.svg" width="75" height="22">
+          </a>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">Главная</a></li>
+            <li class="site-list__item">
+              <a href="photo.html">Фотографии</a></li>
+            <li class="site-list__item site-list__item--active">
+              <a href="form.html">Форма</a></li>
+            <li class="site-list__item">
+              <a href="#">Конкурс</a></li>
+          </ul>
+        </div>
+      </nav>
 
-                <img src="../pink/img/header-logo-mobile.svg" width="75" height="22">
-                </a>
-                <ul class="main-nav__list site-list">
-                    <li class="site-list__item">
-                        <a href="index.html">Главная</a></li>
-                    <li class="site-list__item">
-                        <a href="photo.html">Фотографии</a></li>
-                    <li class="site-list__item site-list__item--active">
-                        <a href="form.html">Форма</a></li>
-                    <li class="site-list__item">
-                        <a href="#">Конкурс</a></li>
-                </ul>
-            </div>
-        </nav>
-
-    <script>
+      <script>
         var navMain = document.querySelector('.main-nav');
         var navToggle = document.querySelector('.main-nav__toggle');
               
         navMain.classList.remove('main-nav--nojs');
               
         navToggle.addEventListener('click', function() {
-            if (navMain.classList.contains('main-nav--closed'
-            )) {
-                navMain.classList.remove('main-nav--closed');
-                navMain.classList.add('main-nav--opened');
-                } else {
-                navMain.classList.add('main-nav--closed');
-                navMain.classList.remove('main-nav--opened');
-            }
+          if (navMain.classList.contains('main-nav--closed'
+          )) {
+            navMain.classList.remove('main-nav--closed');
+            navMain.classList.add('main-nav--opened');
+            } else {
+            navMain.classList.add('main-nav--closed');
+            navMain.classList.remove('main-nav--opened');
+              }
         });
-    </script>
-        <section class="intro">
+      </script>
+      <section class="intro">
                 
-            <div class="intro__wrapper inner-intro__wrapper"></div>
-                <p class="intro__title">Конкурс на самое безбашенное<br>путешествие с Пинк</p>
+        <div class="intro__wrapper inner-intro__wrapper"></div>
+        <p class="intro__title">Конкурс на самое безбашенное<br>путешествие с Пинк</p>
             
-        </section>
+      </section>
     </header>
         
     <main class="page-main page-main__inner">
-        <div class="post-text__wrapper">
-            <p class="post-text post-text--form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-        </div>
-        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="post-text__wrapper">
+        <p class="post-text post-text--form">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+      </div>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
         <section class="who-is">
             
-            <ul class="name__list">
-                <li class="name__item">
-                    <label for="name__user">Имя</label>
-                    <input class="name__user" type="text" id="name__user" name="name" placeholder="Укажите Ваше имя *" required>
-                </li>
-                <li class="name__item">               
-                    <label for="name__surname">Фамилия</label>
-                    <input class="name__user" type="text" id="name__surname" name="surname" placeholder="Ваша фамилия *">
-                </li>
-                <li class="name__item">
-                    <label for="name__family">Отчество</label>
-                    <input class="name__user" type="text" id="name__family" name="family" placeholder="Ну и отчество *" required>
-                </li>
+          <ul class="name__list">
+            <li class="name__item">
+              <label for="name__user">Имя</label>
+              <input class="name__user" type="text" id="name__user" name="name" placeholder="Укажите Ваше имя *" required>
+            </li>
+            <li class="name__item">               
+              <label for="name__surname">Фамилия</label>
+              <input class="name__user" type="text" id="name__surname" name="surname" placeholder="Ваша фамилия *">
+            </li>
+            <li class="name__item">
+              <label for="name__family">Отчество</label>
+              <input class="name__user" type="text" id="name__family" name="family" placeholder="Ну и отчество *" required>
+            </li>
                 
-            </ul>
+          </ul>
             
-            <fieldset class="system-pink">
-                <legend class="system-pink__title">С каким приложением Вы путешествовали:</legend>
-                    <ul class="system-pink__list">
-                    <li class="system-pink__item">
-                        <input class="system-pink__input" type="radio" id="system-pink__ios" name="ios">
-                        <label for="system-pink__ios">Pink для iOS</label>
-                    </li>
-                    <li class="system-pink__item">
-                        <input class="system-pink__input" type="radio" id="system-pink__android" name="android">
-                        <label for="system-pink__android">Pink для Android</label>
-                    </li>
-                    <li class="system-pink__item">
-                        <input class="system-pink__input" type="radio" id="system-pink__windows" name="windows">
-                        <label for="system-pink__windows">Pink для windows phone</label>
-                    </li>
-                    </ul>   
-            </fieldset>
-            </section>
+          <fieldset class="system-pink">
+            <legend class="system-pink__title">С каким приложением Вы путешествовали:</legend>
+            <ul class="system-pink__list">
+              <li class="system-pink__item">
+                <input class="system-pink__input" type="checkbox" id="system-pink__ios" name="ios">
+                <label for="system-pink__ios">Pink для iOS</label>
+              </li>
+              <li class="system-pink__item">
+                <input class="system-pink__input" type="checkbox" id="system-pink__android" name="android">
+                <label for="system-pink__android">Pink для Android</label>
+              </li>
+              <li class="system-pink__item">
+                <input class="system-pink__input" type="checkbox" id="system-pink__windows" name="windows" checked>
+                <label for="system-pink__windows">Pink для windows phone</label>
+              </li>
+            </ul>   
+          </fieldset>
+        </section>
 
-            <fieldset class="contact-information">
-                <legend class="contact-information__title">Контактная информация</legend>
-                    <ul class="contact-information__list">
-                        <li class="contact-information__item contact-information__item--phone">
-                            <input class="contact-information__input" type="tel" id="contact-information__phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Номер, пожалуйста"><br>
-                            <label for="contact-information__phone">123-456-7890</label>
-                        </li>
-                        <li class="contact-information__item contact-information__item--msg">
-                            <input class="contact-information__input" type="email" id="contact-information__email" name="email" placeholder="Ваша почта *" required><br>
-                            <label for="contact-information__email">Адрес почты</label>
-                        </li>
-                    </ul>
-            </fieldset>
-            <fieldset class="travel">
-                <legend class="travel__title">Ваши безбашенные достижения в путешествии:</legend>
-                    <ul class="travel__list">
-                    <li class="travel__item">
+        <fieldset class="contact-information">
+          <legend class="contact-information__title">Контактная информация</legend>
+            <ul class="contact-information__list">
+              <li class="contact-information__item contact-information__item--phone">
+                <input class="contact-information__input" type="tel" id="contact-information__phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Номер, пожалуйста"><br>
+                <label for="contact-information__phone">123-456-7890</label>
+              </li>
+              <li class="contact-information__item contact-information__item--msg">
+                <input class="contact-information__input" type="email" id="contact-information__email" name="email" placeholder="Ваша почта *" required><br>
+                <label for="contact-information__email">Адрес почты</label>
+              </li>
+            </ul>
+        </fieldset>
+        <fieldset class="travel">
+          <legend class="travel__title">Ваши безбашенные достижения в путешествии:</legend>
+            <ul class="travel__list">
+              <li class="travel__item">
+                <input class="travel__input" type="radio" id="travel__item-first" name="selfie">
+                <label for="travel__item-first">Сделал селфи с акулой</label>
+              </li>
+              <li class="travel__item">    
+                <input class="travel__input" type="radio" id="travel__item-second" name="beach">
+                <label for="travel__item-second">Обгорел на пляже</label>
+              </li>
+              <li class="travel__item">       
+                <input class="travel__input" type="radio" id="travel__item-third" name="hand">
+                <label for="travel__item-third">Cломал руку</label>
+              </li>
+              <li class="travel__item">   
+                <input class="travel__input" type="radio" id="travel__item-forth" name="lunch">
+                <label for="travel__item-forth">Сделал вкусный ужин</label>
+              </li>
+              <li class="travel__item">  
+                <input class="travel__input" type="radio" id="travel__item-fifth" name="beach">
+                <label for="travel__item-fifth">Видел Чака Норриса</label>
+              </li>
+              <li class="travel__item">  
+                <input class="travel__input" type="radio" id="travel__item-sixth" name="gift">
+                <label for="travel__item-sixth">Накупил сувениров</label>
+              </li>
+            </ul>   
+        </fieldset>
 
-                        <input class="travel__input" type="radio" id="travel__item-first" name="selfie">
-                        <label for="travel__item-first">Сделал селфи с акулой</label>
-                    </li>
-                    <li class="travel__item">
-                       
-                        <input class="travel__input" type="radio" id="travel__item-second" name="beach">
-                        <label for="travel__item-second">Обгорел на пляже</label>
-                    </li>
-                    <li class="travel__item">
-                        
-                        <input class="travel__input" type="radio" id="travel__item-third" name="hand">
-                        <label for="travel__item-third">Cломал руку</label>
-                    </li>
-                    <li class="travel__item">
-                        
-                        <input class="travel__input" type="radio" id="travel__item-forth" name="lunch">
-                        <label for="travel__item-forth">Сделал вкусный ужин</label>
-                    </li>
-                    <li class="travel__item">
-                       
-                        <input class="travel__input" type="radio" id="travel__item-fifth" name="beach">
-                        <label for="travel__item-fifth">Видел Чака Норриса</label>
-                    </li>
-                    <li class="travel__item">
-                       
-                        <input class="travel__input" type="radio" id="travel__item-sixth" name="gift">
-                        <label for="travel__item-sixth">Накупил сувениров</label>
-                    </li>
-                    </ul>   
-            </fieldset>
-
-            <fieldset class="emotions">
-                    <legend class="emotions__title">Опишите свои эммоции:</legend>
-                        <textarea class="emotions__input" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-            </fieldset>
-            <div class="send__wrapper">
-                <input class="send-form" type="submit" value="Отправить форму">
-                <p class="send-note">* - Обязательные для заполнения поля</p>
-            </div>
-        </form>
-        
-    
-
+        <fieldset class="emotions">
+          <legend class="emotions__title">Опишите свои эммоции:</legend>
+            <textarea class="emotions__input" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </fieldset>
+        <div class="send__wrapper">
+          <input class="send-form" type="submit" value="Отправить форму">
+          <p class="send-note">* - Обязательные для заполнения поля</p>
+        </div>
+      </form>
+      
     </main>
 
-    <footer class="page-footer">
-        <div class="footer__wrapper">
-            <a class="footer__logo-link">
-                <img src="../pink/img/footer-logo-desktop.svg" width="147" height="40" alt="Приложение Pink">
-            </a>
-                
-                <ul class="footer__social-list">
-                    <li class="footer__social-item">
-                        <a class="footer__button"><span class="visually-hidden">Твиттер</span>
-                        <svg  width="18px" height="14px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 17.5 14.7" enable-background="new 0 0 17.5 14.7" xml:space="preserve">
-                        <g id="W6EeEF_1_">
-                        <g>
-                        <path fill="#E90006" d="M11.3,0.2C13-0.3,14.4,0.4,15,1.3c0.7-0.2,1.4-0.5,2.1-0.7c0,0.8-0.5,1.5-0.9,1.7c0.7,0.2,1.3-0.5,1.3-0.5
-                        c-0.2,1-1,1.7-1.6,2c-0.2,6.6-3.3,11-10.4,10.8c-0.5,0,0.1,0-0.5,0c-0.4,0-4.3-0.4-5-1.8c2.3,0.2,4-0.4,4.8-1.1
-                        c-1-0.3-2.8-0.5-3.1-2.9C2.1,8.9,2.3,9,3,8.9C1.8,8.1,0.4,7.4,0.5,5.2c0.3,0.3,1.1,0.5,1.4,0.5c-0.7-0.2-2-3.3-0.9-4.8
-                        c1.9,1.8,3.8,3.5,7.4,3.7C8.5,2.3,9.5,0.8,11.3,0.2z"/>
-                        </g>
-                        </g>
-                        </svg></a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a class="footer__button"><span class="visually-hidden">Фейсбук</span>
-                        <svg version="1.1" width="9" height="18" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                viewBox="0 0 8.7 18.9" enable-background="new 0 0 8.7 18.9" xml:space="preserve">
-                        <path fill="#E90006" d="M6.3,3.4c0.8,0,1.6,0,2.4,0c0-1.1,0-2.2,0-3.4c-1,0-1.9,0-2.9,0C2.7,0.2,1.5,2.4,1.9,6.1H0v3.5h2
-                            c0,3.1,0,6.2,0,9.3c1.3,0,2.6,0,3.8,0c0-3.1,0-6.2,0-9.3h2.9V6.1H5.8C5.8,5.1,5.8,3.7,6.3,3.4z"/>
-                        </svg>
+  <footer class="page-footer">
+    <div class="footer__wrapper">
+      <a class="footer__logo-link">
+        <img src="../pink/img/footer-logo-desktop.svg" width="147" height="40" alt="Приложение Pink">
+      </a>
+               
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a class="footer__button">
+            <span class="visually-hidden">Твиттер</span>
+              <svg  width="18px" height="14px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 17.5 14.7" enable-background="new 0 0 17.5 14.7" xml:space="preserve">
+              <g id="W6EeEF_1_"> <g>
+              <path fill="#E90006" d="M11.3,0.2C13-0.3,14.4,0.4,15,1.3c0.7-0.2,1.4-0.5,2.1-0.7c0,0.8-0.5,1.5-0.9,1.7c0.7,0.2,1.3-0.5,1.3-0.5
+              c-0.2,1-1,1.7-1.6,2c-0.2,6.6-3.3,11-10.4,10.8c-0.5,0,0.1,0-0.5,0c-0.4,0-4.3-0.4-5-1.8c2.3,0.2,4-0.4,4.8-1.1
+              c-1-0.3-2.8-0.5-3.1-2.9C2.1,8.9,2.3,9,3,8.9C1.8,8.1,0.4,7.4,0.5,5.2c0.3,0.3,1.1,0.5,1.4,0.5c-0.7-0.2-2-3.3-0.9-4.8
+              c1.9,1.8,3.8,3.5,7.4,3.7C8.5,2.3,9.5,0.8,11.3,0.2z"/></g>
+              </g>
+              </svg>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__button"><span class="visually-hidden">Фейсбук</span>
+            <svg version="1.1" width="9" height="18" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 8.7 18.9" enable-background="new 0 0 8.7 18.9" xml:space="preserve"><path fill="#E90006" d="M6.3,3.4c0.8,0,1.6,0,2.4,0c0-1.1,0-2.2,0-3.4c-1,0-1.9,0-2.9,0C2.7,0.2,1.5,2.4,1.9,6.1H0v3.5h2
+            c0,3.1,0,6.2,0,9.3c1.3,0,2.6,0,3.8,0c0-3.1,0-6.2,0-9.3h2.9V6.1H5.8C5.8,5.1,5.8,3.7,6.3,3.4z"/>
+            </svg>
                                     
-                        </a>
-                    </li>
-                    <li class="footer__social-item">
-                        <a class="footer__button"><span class="visually-hidden">Ютуб</span>
-                        <svg width="15px" height="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                        viewBox="0 0 14.6 14" enable-background="new 0 0 14.6 14" xml:space="preserve">
-                        <path fill="#E90006" d="M1.8,13.8c-1,0.5-1.8,0-1.8-1.1V1.3c0-1.1,0.8-1.6,1.8-1.1l12.1,5.9c1,0.5,1,1.3,0,1.7L1.8,13.8z"/>
-                        </svg>
-                        <span class="visually-hidden">Ютуб</span></a>
-                    </li>
-                    </ul>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__button"><span class="visually-hidden">Ютуб</span>
+            <svg width="15px" height="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 14.6 14" enable-background="new 0 0 14.6 14" xml:space="preserve">
+            <path fill="#E90006" d="M1.8,13.8c-1,0.5-1.8,0-1.8-1.1V1.3c0-1.1,0.8-1.6,1.8-1.1l12.1,5.9c1,0.5,1,1.3,0,1.7L1.8,13.8z"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
                 
-                <div class="footer__copyright">
-                    <p class="copyright__text">Разработано</p>
-                    <a class="copyright__link" href="#"> <img src="../pink/img/footer-html.svg" width="27" height="34" alt="Приложение Pink">
-                    </a>
+      <div class="footer__copyright">
+        <p class="copyright__text">Разработано</p>
+        <a class="copyright__link" href="#"> 
+            <img src="../pink/img/footer-html.svg" width="27" height="34" alt="Приложение Pink">
+        </a>
+      </div>
+    </div>
 
-
-                </div>
-            </div>
-
-        </footer>
+  </footer>
         
 
         
-    </body>
+</body>
+  
 </html>
+ 
